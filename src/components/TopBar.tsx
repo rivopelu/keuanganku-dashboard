@@ -1,5 +1,6 @@
 import { PageTypeEnum } from "../enums/PageTypeEnums.ts";
 import { StyleVariable } from "../constants/StyleVariable.ts";
+import { BreadcrumbComponents } from "./BreadcrumbComponents.tsx";
 
 export function TopBar(props: IProps) {
   return (
@@ -26,7 +27,9 @@ export function TopBar(props: IProps) {
                     className={
                       "text-xl duration-200 font-semibold uppercase  text-system-body"
                     }
-                  ></div>
+                  >
+                    <BreadcrumbComponents />
+                  </div>
                   <div>
                     <div className={"flex items-center gap-2"}>
                       ADMIN GANTENG
