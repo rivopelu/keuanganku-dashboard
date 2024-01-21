@@ -1,10 +1,14 @@
+import { Container } from "@mui/material";
+import { StyleVariable } from "../constants/StyleVariable.ts";
+
 export function PageContainerDashboard(props: IProps) {
   return (
-    <section
-      className={`mx-16  mt-8    ${props.className ? props.className : ""}`}
+    <Container
+      sx={{ marginTop: StyleVariable.sizing.topBarHeight + 20 + "px" }}
+      className={`     ${props.className ? props.className : ""}`}
     >
       {props.children}
-    </section>
+    </Container>
   );
 }
 

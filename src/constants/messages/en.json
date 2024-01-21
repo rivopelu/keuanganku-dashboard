@@ -7,5 +7,7 @@
   "email" : "email",
   "password" : "password",
   "insert_password" : "insert password",
-  "insert_email" : "insert email"
+  "insert_email" : "insert email",
+  "categories" : "categories",
+  "home" : "Home"
 }

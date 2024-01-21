@@ -3,4 +3,7 @@ export const ROUTES = {
   AUTH: {
     LOGIN: () => "/auth/sign-in",
   },
+  CATEGORIES: {
+    PAGE: () => `/categories`,
+  },
 };

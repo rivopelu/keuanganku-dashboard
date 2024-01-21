@@ -65,7 +65,7 @@ export function Sidebar(props: IProps) {
 
   return (
     <div
-      className={`z-[900] duration-200 ${
+      className={`z-[900] duration-200 sidebar_ ${
         props.type !== PageTypeEnum.PRIMARY ? "-translate-x-96" : ""
       } `}
     >

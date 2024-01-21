@@ -1,4 +1,4 @@
-import { Home, SvgIconComponent } from "@mui/icons-material";
+import { Dashboard, Home, SvgIconComponent } from "@mui/icons-material";
 import { ROUTES } from "./routes.ts";
 
 export const navbarDataMenu: INavbarData[] = [
@@ -6,6 +6,11 @@ export const navbarDataMenu: INavbarData[] = [
     title: "home",
     icons: Home,
     path: ROUTES.ROOT,
+  },
+  {
+    title: "categories",
+    path: ROUTES.CATEGORIES.PAGE(),
+    icons: Dashboard,
   },
 ];
 
