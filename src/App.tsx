@@ -1,4 +1,3 @@
-import { LoginPage } from "./pages/LoginPage.tsx";
 import { Route, Routes } from "react-router-dom";
 import { RouteList } from "./constants/routeList.ts";
 import { BasePage } from "./pages/BasePage.tsx";
@@ -22,7 +21,6 @@ function App() {
           );
         })}
       </Routes>
-      <LoginPage />
     </div>
   );
 }

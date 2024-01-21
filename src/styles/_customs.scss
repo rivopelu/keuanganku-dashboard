@@ -1,3 +1,4 @@
+@import "variable";
 html {
   background: #e2e8f0;
   color : #1e293b;
@@ -5,4 +6,32 @@ html {
 
 .btn {
   box-shadow: none !important;
+}
+
+.navList_item__ {
+  .MuiListItemIcon-root {
+    min-width: 35px !important;
+  }
+
+  .MuiTypography-root {
+    color: $text-gray !important;
+  }
+
+
+  .container_nested_list {
+    margin-top: 4px;
+  }
+
+  .MuiListItemButton-root {
+    margin-top: 4px;
+  }
+
+  .MuiListItemButton-root.active_list__ {
+    background: $primary-10;
+
+    .MuiTypography-root {
+      color: $primary-color !important;
+    }
+
+  }
 }
