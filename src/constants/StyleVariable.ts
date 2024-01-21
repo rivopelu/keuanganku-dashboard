@@ -8,6 +8,8 @@ export const StyleVariable = {
       main: "#4CA154",
       light: "#5AC564",
       dark: "#38873F",
+      10: "rgba(76,161,84,0.1)",
+      5: "rgba(76,161,84,0.05)",
     },
     system: {
       base_bg: "#F6F8FA",
