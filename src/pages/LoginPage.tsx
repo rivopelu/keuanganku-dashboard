@@ -1,14 +1,21 @@
 import { InputText } from "../components/InputText.tsx";
-import { Person, Visibility, VisibilityOff } from "@mui/icons-material";
+import { Lock, Person } from "@mui/icons-material";
 import { Btn } from "../components/Btn.tsx";
 import { useTranslation } from "react-i18next";
 import { Checkbox, FormControlLabel } from "@mui/material";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../constants/routes.ts";
 
 export function LoginPage() {
   const { t } = useTranslation();
 
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState<boolean>(false);
+
+  function onClickLogin() {
+    navigate(ROUTES.ROOT);
+  }
 
   return (
     <div className={"grid grid-cols-2 min-h-screen bg-white"}>
@@ -40,7 +47,7 @@ export function LoginPage() {
               placeholder={t("insert_email")}
             />
             <InputText
-              endIcon={showPassword ? <VisibilityOff /> : <Visibility />}
+              endIcon={<Lock />}
               label={t("password")}
               type={showPassword ? "text" : "password"}
               placeholder={t("insert_password")}
@@ -51,7 +58,7 @@ export function LoginPage() {
               label={t("show_password")}
             />
 
-            <Btn>{t("sign_in")}</Btn>
+            <Btn onClick={onClickLogin}>{t("sign_in")}</Btn>
           </div>
         </div>
       </div>

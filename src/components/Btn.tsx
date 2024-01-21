@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 export function Btn(props: IProps) {
   return (
     <Button
+      onClick={props.onClick}
       sx={{
         borderRadius: 2,
       }}
@@ -22,4 +23,5 @@ interface IProps {
   variant?: "text" | "outlined" | "contained";
   startIcon?: ReactNode;
   endIcon?: ReactNode;
+  onClick?: () => void;
 }
