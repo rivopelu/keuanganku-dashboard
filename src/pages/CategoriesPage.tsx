@@ -9,6 +9,8 @@ import {
   IResCategoriesList,
 } from "../model/res/IResCategoriesList.ts";
 import { ITableColumnData } from "../model/res/ITable.ts";
+import { InputSearch } from "../components/InputSearch.tsx";
+import { Btn } from "../components/Btn.tsx";
 
 export function CategoriesPage() {
   const { t } = useTranslation();
@@ -49,10 +51,26 @@ export function CategoriesPage() {
       },
     ]);
   }, []);
+
+  function topContent() {
+    return (
+      <div className={"w-full flex items-center justify-between"}>
+        <InputSearch />
+      </div>
+    );
+  }
+
   return (
     <PageContainerDashboard>
-      <div className={"bg-white"}>
+      <div className={"grid gap-6"}>
+        <div className={"flex items-center justify-between py-3"}>
+          <h1 className={"font-semibold text-2xl"}>
+            {t("categories").toUpperCase()}
+          </h1>
+          <Btn>Add Category</Btn>
+        </div>
         <MainTable
+          topContent={topContent()}
           paginatedData={{ page: 0, total_data: 122, size: 20 }}
           columns={columns}
           data={dataList}
