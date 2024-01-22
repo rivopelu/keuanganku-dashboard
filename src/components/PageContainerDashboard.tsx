@@ -1,14 +1,10 @@
-import { Container } from "@mui/material";
-import { StyleVariable } from "../constants/StyleVariable.ts";
-
 export function PageContainerDashboard(props: IProps) {
   return (
-    <Container
-      sx={{ marginTop: StyleVariable.sizing.topBarHeight + 20 + "px" }}
-      className={`     ${props.className ? props.className : ""}`}
+    <div
+      className={`px-16 py-20     ${props.className ? props.className : ""}`}
     >
       {props.children}
-    </Container>
+    </div>
   );
 }
 

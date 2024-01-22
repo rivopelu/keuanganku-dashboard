@@ -8,6 +8,7 @@ export function Btn(props: IProps) {
       onClick={props.onClick}
       sx={{
         borderRadius: 2,
+        width: props.fitWidth ? undefined : "100%",
       }}
       color={props.color}
       className={"btn"}
@@ -27,4 +28,5 @@ interface IProps {
   startIcon?: ReactNode;
   endIcon?: ReactNode;
   onClick?: () => void;
+  fitWidth?: boolean;
 }

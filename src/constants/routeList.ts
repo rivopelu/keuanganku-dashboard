@@ -2,7 +2,7 @@ import { PageTypeEnum } from "../enums/PageTypeEnums.ts";
 import { LoginPage } from "../pages/LoginPage.tsx";
 import { ROUTES } from "./routes.ts";
 import { HomePage } from "../pages/HomePage.tsx";
-import { CategoriesPage } from "../pages/CategoriesPage.tsx";
+import { CategoriesPage } from "../pages/Categories/CategoriesPage.tsx";
 
 export interface IRoutesList {
   path: string;

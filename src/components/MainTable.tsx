@@ -19,10 +19,14 @@ export function MainTable(props: IProps) {
   return (
     <MainCard className={"p-8"}>
       {props.topContent && (
-        <div className={"w-full mb-5"}>{props.topContent}</div>
+        <div className={"w-full mb-7"}>{props.topContent}</div>
       )}
 
-      <TableContainer component={Paper} sx={{ boxShadow: "none" }}>
+      <TableContainer
+        component={Paper}
+        sx={{ boxShadow: "none" }}
+        className={"border"}
+      >
         <Table sx={{ minWidth: 650 }} aria-label="caption table">
           <TableHead>
             <TableRow>
@@ -66,12 +70,12 @@ export function MainTable(props: IProps) {
               ))}
           </TableBody>
         </Table>
-        {props.paginatedData && (
-          <div className={"my-3"}>
-            <Paginated dataPaginated={props.paginatedData} />
-          </div>
-        )}
       </TableContainer>
+      {props.paginatedData && (
+        <div className={"mb-3 mt-6 "}>
+          <Paginated dataPaginated={props.paginatedData} />
+        </div>
+      )}
     </MainCard>
   );
 }

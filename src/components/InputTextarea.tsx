@@ -2,10 +2,10 @@ import { InputAdornment, TextField } from "@mui/material";
 import { HTMLInputTypeAttribute, ReactNode } from "react";
 import { OutlinedInputProps } from "@mui/material/OutlinedInput";
 
-export function InputText(props: IProps) {
+export function InputTextarea(props: IProps) {
   return (
     <TextField
-      sx={{ width: "100%", borderRadius: 2 }}
+      sx={{ width: "100%" }}
       label={props.label}
       size={"small"}
       type={props.type || "text"}
@@ -18,6 +18,8 @@ export function InputText(props: IProps) {
       placeholder={props.placeholder}
       helperText={props.errorMessage}
       error={!!props.errorMessage}
+      multiline
+      rows={4}
       InputProps={{
         sx: {
           borderRadius: 2,

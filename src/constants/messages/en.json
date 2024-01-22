@@ -10,5 +10,14 @@
   "insert_email" : "insert email",
   "categories" : "categories",
   "home" : "Home",
-  "total_transaction" : "Total Transaction"
+  "total_transaction" : "Total Transaction",
+  "add_category" : "Add Category",
+  "oke" : "oke",
+  "cancel" : "cancel",
+  "name" : "name",
+  "add_new_category" : "add new category",
+  "category_name" : "category name",
+  "description" : "description",
+  "insert_category_name" : "insert category name",
+  "insert_category_description" : "insert category description"
 }

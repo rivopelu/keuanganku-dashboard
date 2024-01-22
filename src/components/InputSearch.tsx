@@ -9,6 +9,9 @@ export function InputSearch() {
         placeholder={"search name"}
         sx={{ background: "white" }}
         InputProps={{
+          sx: {
+            borderRadius: 2,
+          },
           startAdornment: (
             <InputAdornment position="start">
               <Search />
